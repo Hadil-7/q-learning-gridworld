@@ -1,0 +1,23 @@
+name: Test Q-learning project
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unit tests
+        run: python3 -m unittest discover -v
+      - name: Train and evaluate both maps
+        run: python3 main.py --all-maps --seeds 0 --episodes 3000 --output outputs/ci.json --summary outputs/ci-summary.json --svg-dir outputs/svg
+      - name: Check learned paths against BFS
+        run: python3 -c "import json; data=json.load(open('outputs/ci-summary.json')); assert data['run_count'] == 2; assert data['greedy_successes'] == 2; assert data['optimal_runs'] == 2"
