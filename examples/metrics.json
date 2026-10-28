@@ -1,0 +1,145 @@
+{
+  "algorithm": "tabular Q-learning",
+  "episodes_per_run": 3000,
+  "max_steps_per_episode": 150,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "maps": {
+    "classic": [
+      "..#.G",
+      "..##.",
+      ".....",
+      ".#.#.",
+      "S...."
+    ],
+    "detour": [
+      "S..#..G",
+      "##.#.##",
+      "...#...",
+      ".#####.",
+      ".......",
+      ".###.#.",
+      "......."
+    ]
+  },
+  "run_count": 10,
+  "greedy_successes": 10,
+  "optimal_runs": 10,
+  "runs": [
+    {
+      "map": "classic",
+      "seed": 0,
+      "episodes": 3000,
+      "greedy_success": true,
+      "learned_path_steps": 8,
+      "bfs_shortest_steps": 8,
+      "optimal": true,
+      "excess_steps": 0,
+      "training_success_rate_last_100": 1.0
+    },
+    {
+      "map": "classic",
+      "seed": 1,
+      "episodes": 3000,
+      "greedy_success": true,
+      "learned_path_steps": 8,
+      "bfs_shortest_steps": 8,
+      "optimal": true,
+      "excess_steps": 0,
+      "training_success_rate_last_100": 1.0
+    },
+    {
+      "map": "classic",
+      "seed": 2,
+      "episodes": 3000,
+      "greedy_success": true,
+      "learned_path_steps": 8,
+      "bfs_shortest_steps": 8,
+      "optimal": true,
+      "excess_steps": 0,
+      "training_success_rate_last_100": 1.0
+    },
+    {
+      "map": "classic",
+      "seed": 3,
+      "episodes": 3000,
+      "greedy_success": true,
+      "learned_path_steps": 8,
+      "bfs_shortest_steps": 8,
+      "optimal": true,
+      "excess_steps": 0,
+      "training_success_rate_last_100": 1.0
+    },
+    {
+      "map": "classic",
+      "seed": 4,
+      "episodes": 3000,
+      "greedy_success": true,
+      "learned_path_steps": 8,
+      "bfs_shortest_steps": 8,
+      "optimal": true,
+      "excess_steps": 0,
+      "training_success_rate_last_100": 1.0
+    },
+    {
+      "map": "detour",
+      "seed": 0,
+      "episodes": 3000,
+      "greedy_success": true,
+      "learned_path_steps": 22,
+      "bfs_shortest_steps": 22,
+      "optimal": true,
+      "excess_steps": 0,
+      "training_success_rate_last_100": 1.0
+    },
+    {
+      "map": "detour",
+      "seed": 1,
+      "episodes": 3000,
+      "greedy_success": true,
+      "learned_path_steps": 22,
+      "bfs_shortest_steps": 22,
+      "optimal": true,
+      "excess_steps": 0,
+      "training_success_rate_last_100": 1.0
+    },
+    {
+      "map": "detour",
+      "seed": 2,
+      "episodes": 3000,
+      "greedy_success": true,
+      "learned_path_steps": 22,
+      "bfs_shortest_steps": 22,
+      "optimal": true,
+      "excess_steps": 0,
+      "training_success_rate_last_100": 1.0
+    },
+    {
+      "map": "detour",
+      "seed": 3,
+      "episodes": 3000,
+      "greedy_success": true,
+      "learned_path_steps": 22,
+      "bfs_shortest_steps": 22,
+      "optimal": true,
+      "excess_steps": 0,
+      "training_success_rate_last_100": 1.0
+    },
+    {
+      "map": "detour",
+      "seed": 4,
+      "episodes": 3000,
+      "greedy_success": true,
+      "learned_path_steps": 22,
+      "bfs_shortest_steps": 22,
+      "optimal": true,
+      "excess_steps": 0,
+      "training_success_rate_last_100": 1.0
+    }
+  ]
+}
